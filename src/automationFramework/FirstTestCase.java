@@ -1,4 +1,4 @@
-package automationFramework;
+п»їpackage automationFramework;
 
 import java.util.List;
 
@@ -18,14 +18,14 @@ public class FirstTestCase {
 		driver.get("http://www.test3.netri.org");
 		driver.get("http://www.test3.netri.org/individual-order/large");
 
-		// Choose "Щільність паперу"
+		// Choose "Р©С–Р»СЊРЅС–СЃС‚СЊ РїР°РїРµСЂСѓ"
 		WebElement paperDensityEl = driver.findElement(By.id("paperType"));
 
 		List<WebElement> options = paperDensityEl.findElements(By.tagName("option"));
 
 		for (WebElement option : options) {
 
-			if (option.getText().equals("Крейдований папір 250 гр/м2")) {
+			if (option.getText().equals("РљСЂРµР№РґРѕРІР°РЅРёР№ РїР°РїС–СЂ 250 РіСЂ/Рј2")) {
 				option.click();
 				break;
 			}
@@ -33,7 +33,7 @@ public class FirstTestCase {
 
 		// End
 
-		// Choose "тираж"
+		// Choose "С‚РёСЂР°Р¶"
 		WebElement paperEditionEl = driver.findElement(By.id("printingQuantitySelect"));
 
 		List<WebElement> options1 = paperEditionEl.findElements(By.tagName("option"));
@@ -48,19 +48,19 @@ public class FirstTestCase {
 
 		// End
 
-		// Choose "тираж"
+		// Choose "С‚РёСЂР°Р¶"
 		WebElement paperFormatEl = driver.findElement(By.id("format_4"));
 		paperFormatEl.click();
 		// End
 
-		// Choose "постпресс роботи_1"
+		// Choose "РїРѕСЃС‚РїСЂРµСЃСЃ СЂРѕР±РѕС‚Рё_1"
 		WebElement laminationEl = driver.findElement(By.name("postPress_1"));
 
 		List<WebElement> options2 = laminationEl.findElements(By.tagName("option"));
 
 		for (WebElement option : options2) {
 
-			if (option.getText().equals("матова ламінація 1+0")) {
+			if (option.getText().equals("РјР°С‚РѕРІР° Р»Р°РјС–РЅР°С†С–СЏ 1+0")) {
 				option.click();
 				break;
 			}
@@ -68,14 +68,14 @@ public class FirstTestCase {
 
 		// End
 
-		// Choose "постпресс роботи_2"
+		// Choose "РїРѕСЃС‚РїСЂРµСЃСЃ СЂРѕР±РѕС‚Рё_2"
 		WebElement roundingEl = driver.findElement(By.name("postPress_2"));
 
 		List<WebElement> options3 = roundingEl.findElements(By.tagName("option"));
 
 		for (WebElement option : options3) {
 
-			if (option.getText().equals("Заокруглення кутів")) {
+			if (option.getText().equals("Р—Р°РѕРєСЂСѓРіР»РµРЅРЅСЏ РєСѓС‚С–РІ")) {
 				option.click();
 				break;
 			}
@@ -83,14 +83,14 @@ public class FirstTestCase {
 
 		// End
 
-		// Choose "постпресс роботи_3"
+		// Choose "РїРѕСЃС‚РїСЂРµСЃСЃ СЂРѕР±РѕС‚Рё_3"
 		WebElement creasingEl = driver.findElement(By.name("postPress_3"));
 
 		List<WebElement> options4 = creasingEl.findElements(By.tagName("option"));
 
 		for (WebElement option : options4) {
 
-			if (option.getText().equals("4 біги")) {
+			if (option.getText().equals("4 Р±С–РіРё")) {
 				option.click();
 				break;
 			}
@@ -98,14 +98,14 @@ public class FirstTestCase {
 
 		// End
 
-		// Choose "постпресс роботи_4"
+		// Choose "РїРѕСЃС‚РїСЂРµСЃСЃ СЂРѕР±РѕС‚Рё_4"
 		WebElement fillisterEl = driver.findElement(By.name("postPress_4"));
 
 		List<WebElement> options5 = fillisterEl.findElements(By.tagName("option"));
 
 		for (WebElement option : options5) {
 
-			if (option.getText().equals("2 фальца")) {
+			if (option.getText().equals("2 С„Р°Р»СЊС†Р°")) {
 				option.click();
 				break;
 			}
@@ -113,14 +113,14 @@ public class FirstTestCase {
 
 		// End
 
-		// Choose "постпресс роботи_5"
+		// Choose "РїРѕСЃС‚РїСЂРµСЃСЃ СЂРѕР±РѕС‚Рё_5"
 		WebElement perforationEl = driver.findElement(By.name("postPress_5"));
 
 		List<WebElement> options6 = perforationEl.findElements(By.tagName("option"));
 
 		for (WebElement option : options6) {
 
-			if (option.getText().equals("7 проходів")) {
+			if (option.getText().equals("7 РїСЂРѕС…РѕРґС–РІ")) {
 				option.click();
 				break;
 			}
@@ -128,14 +128,14 @@ public class FirstTestCase {
 
 		// End
 
-		// Choose "постпресс роботи_6"
+		// Choose "РїРѕСЃС‚РїСЂРµСЃСЃ СЂРѕР±РѕС‚Рё_6"
 		WebElement cuttingEl = driver.findElement(By.name("postPress_6"));
 
 		List<WebElement> options7 = cuttingEl.findElements(By.tagName("option"));
 
 		for (WebElement option : options7) {
 
-			if (option.getText().equals("1 різ")) {
+			if (option.getText().equals("1 СЂС–Р·")) {
 				option.click();
 				break;
 			}
@@ -143,14 +143,14 @@ public class FirstTestCase {
 
 		// End
 
-		// Choose "постпресс роботи_7"
+		// Choose "РїРѕСЃС‚РїСЂРµСЃСЃ СЂРѕР±РѕС‚Рё_7"
 		WebElement boringEl = driver.findElement(By.name("postPress_7"));
 
 		List<WebElement> options8 = boringEl.findElements(By.tagName("option"));
 
 		for (WebElement option : options8) {
 
-			if (option.getText().equals("2 отвори")) {
+			if (option.getText().equals("2 РѕС‚РІРѕСЂРё")) {
 				option.click();
 				break;
 			}
@@ -158,7 +158,7 @@ public class FirstTestCase {
 
 		// End
 
-		// Choose "макет"
+		// Choose "РјР°РєРµС‚"
 		WebElement radioButtontEl = driver.findElement(By.id("url_option"));
 		radioButtontEl.click();
 		// End
@@ -179,7 +179,7 @@ public class FirstTestCase {
 
 		for (WebElement option : options9) {
 
-			if (option.getText().equals("Київ")) {
+			if (option.getText().equals("РљРёС—РІ")) {
 				option.click();
 				break;
 			}
@@ -194,7 +194,7 @@ public class FirstTestCase {
 		for (WebElement option : options10) {
 
 			if (option.getText()
-					.equals("Відділення №30 (до 30 кг на одне місце): вул. Привокзальна, 14 (Дарниця ЖД)")) {
+					.equals("Р’С–РґРґС–Р»РµРЅРЅСЏ в„–30 (РґРѕ 30 РєРі РЅР° РѕРґРЅРµ РјС–СЃС†Рµ): РІСѓР». РџСЂРёРІРѕРєР·Р°Р»СЊРЅР°, 14 (Р”Р°СЂРЅРёС†СЏ Р–Р”)")) {
 				option.click();
 				break;
 			}
@@ -203,12 +203,12 @@ public class FirstTestCase {
 
 		// Enter comment
 		WebElement commentText = driver.findElement(By.name("orderComment"));
-		commentText.sendKeys("Швидко, якісно, дешево з доставкою!");
+		commentText.sendKeys("РЁРІРёРґРєРѕ, СЏРєС–СЃРЅРѕ, РґРµС€РµРІРѕ Р· РґРѕСЃС‚Р°РІРєРѕСЋ!");
 		// End
 
 		// Personal info
 		WebElement userFirstName = driver.findElement(By.name("userFirstName"));
-		userFirstName.sendKeys("Катерина");
+		userFirstName.sendKeys("РљР°С‚РµСЂРёРЅР°");
 
 		WebElement userPhone = driver.findElement(By.name("userPhone"));
 		userPhone.sendKeys("+380636845572");
